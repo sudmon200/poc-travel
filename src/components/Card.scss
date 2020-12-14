@@ -1,0 +1,121 @@
+@import '../assets/styles/variables';
+
+.cardsWrapper{
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  orphans: 1;
+  widows: 1;
+}
+// .card{
+//   box-sizing: border-box;
+//   background-color: #FFFFFF;
+//   border-radius: 20px;
+//   width: 305px;
+//   min-height: 352px;
+//   margin: 0 20px 20px 0;
+//   padding: 10px;
+//   float:left;
+// }
+
+.card{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 305px;
+  margin: 17px 0;
+  position: relative;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color:$color-white;
+  background-clip: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+// .card:nth-child(4n){
+//   margin-right: 0;
+// }
+
+
+
+.card__thumbnail{
+  width: 285px;
+  height: 149px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.tag{
+  font-family: $font-opensans;
+  color: $color-white;
+  font-weight:bold;
+  font-size: 14px;
+  display: inline-block;
+  background: $color-yellow;
+  border-radius: 11.5px;
+  padding:2px 10px;
+  margin-right:10px;
+  box-sizing: border-box;
+  line-height: 17px;
+}
+
+.tags{
+  margin-top:5px;
+}
+.tag:last-child{
+  margin-right: 0;
+}
+
+.card__title{
+  font-size:24px;
+  line-height: 29px;
+  font-weight:600;
+  color: $color-blue;
+  padding:10px 0;
+}
+
+.card__content{
+  color: $color-grey-dark;
+  line-height: 22px;
+  font-size:18px;
+  padding: 10px 10px 20px 10px;
+}
+
+.card__icon{
+  display:flex;
+  justify-content: flex-end;
+  height:30px;
+  button{
+    padding:0;
+    padding-left:20px
+  }
+}
+
+.card .checkmark{
+  position: absolute;
+  right: -30px;
+  top: -30px;
+}
+
+.card:hover{
+  box-shadow: 0px 5px 20px 0px ($color-blue/ .5);
+}
+
+.card.active{
+  box-shadow: 0px 5px 20px 0px ($color-blue/ .5);
+  background: linear-gradient(135deg, $color-blue 0%, $color-purple 100%);
+
+  .card__title{
+    color: $color-white;
+  }
+
+  .card__content{
+    color: $color-grey-medium;
+  }
+}

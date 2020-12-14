@@ -1,0 +1,16 @@
+@import '../assets/styles/variables';
+
+.logo{
+  font-family: $font-poppins;
+  margin: 0px 0 10px 0;
+  cursor: pointer;
+}
+
+.navigation{
+  flex:1;
+  display: inline-block;
+  width: 44px;
+  .button{
+    margin:10px 0;
+  }
+}
