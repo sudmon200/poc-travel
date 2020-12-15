@@ -12,7 +12,7 @@
 
 #### Built With
 * React
-* Custom CSS
+* Custom Sass/CSS
 
 #### Screenshot - Desktop 
 <img width="1438" alt="Screenshot 2020-12-15 at 3 48 51 PM" src="https://user-images.githubusercontent.com/71149670/102202249-1f67ce00-3eed-11eb-8432-e73db4aa15c4.png">
