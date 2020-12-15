@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import image1 from '../assets/images/image1.png'
 import image2 from '../assets/images/image2.png'
 import image3 from '../assets/images/image3.png'
@@ -15,9 +15,16 @@ import {ReactComponent as Checkmark} from '../assets/icons/checkmark.svg';
 import './Card.scss'
 
 function Cardswrapper() {
+  const [isActive, setActive] = useState(false)
+  console.log('isActive', isActive)
+
+  const toggle = (e) => {
+    console.log(e)
+  }
+
   return (
     <div className='cardsWrapper'>
-      <div className='card'>
+      <div className='card' onClick={toggle}>
         <img src={image1} className='card__thumbnail' alt='City 1'/>
         <div className='tags'>
           <span className='tag'>Wellington</span><span className='tag'>Tianjin</span>

@@ -7,10 +7,10 @@ import './Header.scss'
 function Header() {
   return (
     <header  className='header'>
-      <div className='heading'>
+      <div className='header__heading'>
         <h1>Discover great place to visit</h1>
       </div>
-      <div className='changeView'>
+      <div className='header__changeView'>
         <button className='button button__round gridView active'><Gridview/></button>
         <button className='button button__round listView'><Listview/></button>
       </div>

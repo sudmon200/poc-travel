@@ -10,16 +10,6 @@
   orphans: 1;
   widows: 1;
 }
-// .card{
-//   box-sizing: border-box;
-//   background-color: #FFFFFF;
-//   border-radius: 20px;
-//   width: 305px;
-//   min-height: 352px;
-//   margin: 0 20px 20px 0;
-//   padding: 10px;
-//   float:left;
-// }
 
 .card{
   box-sizing: border-box;
@@ -38,17 +28,12 @@
   cursor: pointer;
 }
 
-// .card:nth-child(4n){
-//   margin-right: 0;
-// }
-
-
-
 .card__thumbnail{
   width: 285px;
   height: 149px;
   overflow: hidden;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .tag{
@@ -119,3 +104,4 @@
     color: $color-grey-medium;
   }
 }
+

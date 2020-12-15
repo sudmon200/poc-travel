@@ -7,14 +7,13 @@ import './StickySelected.scss'
 
 function StickySelected() {
   return (
-    <div class='stickySelected'>
-      <div class='selected'>
+    <div className='stickySelected'>
+      <div className='selected'>
         <button className='button '><Negative/></button>
-        <div class='selected__item'>1 Item Selected</div>
+        <div className='selected__item'>1 Item Selected</div>
         <button className='button '><Heart/></button>
         <button className='button '><Upload/></button>
       </div>
-
     </div>
   )
 }
